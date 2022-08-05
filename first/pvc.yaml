@@ -1,0 +1,9 @@
+apiVersion: apps/v1
+kind: StorageClass
+metadata:
+  name: ssd
+provisioner: kubernetes.io/gce-pd
+parameters:
+  type: pd-ssd
+volumeBindingMode: Immediate
+reclaimPolicy: Delete
