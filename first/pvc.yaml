@@ -9,3 +9,4 @@ spec:
     requests:
       storage: 8Gi
   storageClassName: default
+  volumeMode: Filesystem
